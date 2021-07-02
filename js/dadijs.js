@@ -18,7 +18,7 @@ if (userNumber > pcNumber) {
     risultato.innerHTML = 'bravo! hai vinto ' + userNumber + ' a ' + pcNumber + '!';
 }
 
-else if (userNumber = pcNumber) {
+else if (userNumber == pcNumber) {
     risultato.innerHTML = 'oh no! hai pareggiato ' + userNumber + ' a ' + pcNumber + '!';
 }
 
