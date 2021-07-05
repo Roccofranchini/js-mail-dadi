@@ -14,7 +14,45 @@ var listEmail = ['laura@gmail.com', 'luigi@hotmail.it', 'peppino@libero.eu', 'lu
 var userEmail = prompt('inserisci la tua email');
 var esito = document.getElementById('esito');
 
+var isAllowed = false;
 
+for (i = 0; i < listEmail.length; i++) {
+    if (userEmail === listEmail[i]) {
+        isAllowed = true;
+    }
+
+}
+
+if (isAllowed) {
+    esito.innerHTML = "ciao " + userEmail;
+}
+
+else {
+    esito.innerHTML = "Non sei autorizzato a visualizzare questo contenuto";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 if (listEmail.includes(userEmail)) {
     esito.innerHTML = 'welcome ' + userEmail;
 }
@@ -22,3 +60,4 @@ if (listEmail.includes(userEmail)) {
 else {
     esito.innerHTML = 'im sorry but you are not allowed to see this page'
 }
+*/
